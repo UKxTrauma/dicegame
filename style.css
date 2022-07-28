@@ -19,14 +19,25 @@
     background-image: url(2iiH.gif);
 }
 
+#buttDiv {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    background: none;
+}
+
 .buttNaked {
-    font-size: 0.75em;
+    font-size: 0.5em;
     color: rgb(255, 255, 255);
     text-shadow: 0em 0em 0.5em rgb(0, 0, 0);
     background: none;
 }
 .buttNaked:hover {
     cursor: pointer;
+}
+
+#new {
+    width: 100%;
 }
 
 #game {
@@ -52,6 +63,28 @@
 #score {
     color: rgb(224, 159, 37);
     background: none;
+    display: block;
+}
+
+#twoPlayer {
+    width: 80%;
+    display: none;
+    flex-wrap: wrap;
+    background: none;
+}
+
+#score1 {
+    width: 50%;
+    color: rgb(224, 37, 37);
+    background: none;
+    padding: 1em 0em 1em 0em;
+}
+
+#score2 {
+    width: 50%;
+    color: rgb(0, 0, 255);
+    background: none;
+    padding: 1em 0em 1em 0em;
 }
 
 #condition {
@@ -61,6 +94,11 @@
 
 #update {
     color: rgb(78, 131, 0);
+    background: none;
+}
+
+#hold {
+    width: 100%;
     background: none;
 }
 

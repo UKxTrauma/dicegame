@@ -11,9 +11,18 @@
     
     <div id="container">
         <div id="game">
-            <button onclick="themeButt()" class="buttNaked">THEME</button>
+            <div id="buttDiv">
+                <button onclick="themeButt()" class="buttNaked">THEME</button>
+                <button onclick="playerButt()" class="buttNaked">TOGGLE PLAYERS</button>
+            </div>
             <p id="info">HIT 20 OR MORE TO WIN<br>ROLL A '1' TO LOSE!</p>
             <P id="score">> SCORE <</P>
+            <div id="twoPlayer">
+                <button id="new" class="buttNaked">NEW GAME</button>
+                <P id="score1">PLAYER ONE<br>> SCORE <</P>
+                <P id="score2">PLAYER TWO<br>> SCORE <</P>
+                <button onclick="holdButt()" id="hold" class="buttNaked">HOLD</button>
+            </div>
             <p id="condition"></p>
             <p id="update"></p>
             <button id="roll">ROLL DICE</button>
