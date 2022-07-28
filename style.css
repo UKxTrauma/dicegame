@@ -25,6 +25,9 @@
     text-shadow: 0em 0em 0.5em rgb(0, 0, 0);
     background: none;
 }
+.buttNaked:hover {
+    cursor: pointer;
+}
 
 #game {
     width: 777px;
@@ -89,7 +92,7 @@
 .theme {
     background-color: rgb(255, 255, 255);
     color: black;
-};
+}
 
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -142,4 +145,4 @@
     91%{
         box-shadow: 0em 0em 1em rgba(79, 0, 40);
     }
-};
+}
