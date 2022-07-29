@@ -2,6 +2,8 @@ let scoreCount = 0;
     score1Count = 0;
     score2Count = 0;
     currentPlayer = 1;
+    player1 = document.getElementById('point1');
+    player2 = document.getElementById('point2');
 
 const rollButt = document.getElementById('roll');
       restartButt = document.getElementById('restart');
@@ -19,6 +21,8 @@ restartButt.addEventListener('click', ()=> {
     document.getElementById('score2').innerHTML = 'PLAYER TWO<br>> SCORE <';
     roll.style.visibility = 'visible';
     restart.style.visibility = 'hidden';
+    player1.style.visibility = 'visible';
+    player2.style.visibility = 'hidden';
 });
 
 newGame.addEventListener('click', ()=> {
@@ -33,6 +37,8 @@ newGame.addEventListener('click', ()=> {
     document.getElementById('score2').innerHTML = 'PLAYER TWO<br>> SCORE <';
     roll.style.visibility = 'visible';
     restart.style.visibility = 'hidden';
+    player1.style.visibility = 'visible';
+    player2.style.visibility = 'hidden';
 });
 
 
@@ -110,8 +116,6 @@ rollButt.addEventListener("click", ()=> {
 ////////////////////////////////////////////////////////////////////////
 
 function holdButt () {
-    let player1 = document.getElementById('point1');
-        player2 = document.getElementById('point2');
     if(currentPlayer == 1){
         currentPlayer = 2
         player1.style.visibility = 'hidden';
