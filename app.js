@@ -109,12 +109,17 @@ rollButt.addEventListener("click", ()=> {
 });
 ////////////////////////////////////////////////////////////////////////
 
-
 function holdButt () {
+    let player1 = document.getElementById('point1');
+        player2 = document.getElementById('point2');
     if(currentPlayer == 1){
         currentPlayer = 2
+        player1.style.visibility = 'hidden';
+        player2.style.visibility = 'visible';
     } else {
         currentPlayer = 1
+        player1.style.visibility = 'visible';
+        player2.style.visibility = 'hidden';
     }
 };
 
